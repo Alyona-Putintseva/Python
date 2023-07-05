@@ -1,0 +1,18 @@
+print('Игра "Орел-Решка"')
+print("Введите '0', если выбираете Орел")
+print("Введите '1', если выбираете Решка")
+user_input = input("Enter number: ")
+choice=" "
+if int(user_input) == 0:
+    choice = "Орел"
+else:
+    choice = "Решка"
+
+import random
+coin = random.choice(["Орел", "Решка"])
+if choice==coin:
+    print(coin)
+    print("You are win!")
+else:
+    print(coin)
+    print("You are lose!")
