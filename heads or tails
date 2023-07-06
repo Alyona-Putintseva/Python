@@ -1,3 +1,4 @@
+import random
 print('Игра "Орел-Решка"')
 print("Введите '0', если выбираете Орел")
 print("Введите '1', если выбираете Решка")
@@ -5,10 +6,9 @@ user_input = input("Enter number: ")
 choice=" "
 if int(user_input) == 0:
     choice = "Орел"
-else:
+elif int(user_input) == 1:
     choice = "Решка"
 
-import random
 coin = random.choice(["Орел", "Решка"])
 if choice==coin:
     print(coin)
